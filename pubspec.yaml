@@ -13,30 +13,31 @@ dependencies:
     sdk: flutter
 
 #  UI
-  flutter_list_view: ^1.1.23
+  flutter_list_view: ^1.1.29
   pull_to_refresh: ^2.0.0
   flutter_portal: ^1.1.4
-  intl: ^0.19.0
-  flutter_localization: ^0.2.0
-  flutter_svg: ^2.0.10
+  intl: ^0.20.2
+  flutter_localization: ^0.3.1
+  flutter_svg: ^2.0.17
 
 #  logic
-  uuid: ^4.1.0
-  flutter_bloc: ^8.1.2
-  dart_date: ^1.2.2
+  uuid: ^4.5.1
+  flutter_bloc: ^9.0.0
+  dart_date: ^1.4.0
 
 #  generators
-  freezed: ^2.4.2
-  freezed_annotation: ^2.4.1
-  web: ^0.5.0
-
+  freezed: ^2.5.8
+  freezed_annotation: ^2.4.4
+  web: ^1.1.0
+dependency_overrides:
+  intl: ^0.17.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: 3.0.1
-  build_runner: ^2.4.6
-  json_serializable: ^6.7.1
-
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
+  json_serializable: ^6.9.3
+  intl: ^0.20.2
 flutter:
   assets:
     - packages/sm_modules/assets/images/auth_back_cubes.png
