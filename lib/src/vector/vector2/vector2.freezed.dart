@@ -25,8 +25,12 @@ mixin _$Vector2<T> {
   @VectorConverter()
   T? get y => throw _privateConstructorUsedError;
 
+  /// Serializes this Vector2 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Vector2
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $Vector2CopyWith<T, Vector2<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$Vector2CopyWithImpl<T, $Res, $Val extends Vector2<T>>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Vector2
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$Vector2ImplCopyWithImpl<T, $Res>
       _$Vector2Impl<T> _value, $Res Function(_$Vector2Impl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of Vector2
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -135,14 +143,16 @@ class _$Vector2Impl<T> implements _Vector2<T> {
             const DeepCollectionEquality().equals(other.y, y));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(x),
       const DeepCollectionEquality().hash(y));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Vector2
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$Vector2ImplCopyWith<T, _$Vector2Impl<T>> get copyWith =>
@@ -170,8 +180,11 @@ abstract class _Vector2<T> implements Vector2<T> {
   @override
   @VectorConverter()
   T? get y;
+
+  /// Create a copy of Vector2
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$Vector2ImplCopyWith<T, _$Vector2Impl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

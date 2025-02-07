@@ -23,7 +23,9 @@ mixin _$AppSnack {
   List<SnackOption>? get options => throw _privateConstructorUsedError;
   Duration get duration => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppSnack
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AppSnackCopyWith<AppSnack> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +54,8 @@ class _$AppSnackCopyWithImpl<$Res, $Val extends AppSnack>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AppSnack
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -116,6 +120,8 @@ class __$$AppSnackImplCopyWithImpl<$Res>
       _$AppSnackImpl _value, $Res Function(_$AppSnackImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppSnack
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -212,7 +218,9 @@ class _$AppSnackImpl implements _AppSnack {
   int get hashCode => Object.hash(runtimeType, index, child, text, actions,
       const DeepCollectionEquality().hash(_options), duration);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppSnack
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AppSnackImplCopyWith<_$AppSnackImpl> get copyWith =>
@@ -240,8 +248,11 @@ abstract class _AppSnack implements AppSnack {
   List<SnackOption>? get options;
   @override
   Duration get duration;
+
+  /// Create a copy of AppSnack
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AppSnackImplCopyWith<_$AppSnackImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
